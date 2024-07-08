@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import re
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-# Ensure NLTK resources are downloaded
+# kode nltk
 nltk.download('stopwords')
 nltk.download('punkt')
 
@@ -573,7 +573,7 @@ def main():
                         topik_additional_text = " ".join(topik_additional)
                         st.write(topik_additional_text)
 
-                    # Generate summaries using LLM
+                    # Generate summaries untuk LLM
                     kesimpulan_domestik, kesimpulan_ekspor, kesimpulan_additional = generate_summary(
                         avg_values_1, avg_values_2, topik_domestik_text, topik_ekspor_text, jawaban_additional_data,
                         quarter_now, quarter_before, phenomenon_reason
